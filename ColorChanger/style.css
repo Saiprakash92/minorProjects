@@ -1,0 +1,29 @@
+#grey{
+    background-color: grey;
+    padding: 20px;
+    width: 20px;
+    height: 10px;
+    margin-left: 2px;
+    margin-right: 3px;
+}
+#black{
+    background-color:black;
+    padding: 20px;
+    width: 20px;
+    height: 10px;
+    margin-right: 3px;
+}
+#blue{
+    background-color: blue;
+    padding: 20px;
+    width: 20px;
+    height: 10px;
+    margin-right: 3px;
+}
+#yellow{
+    background-color: yellow;
+    padding: 20px;
+    width: 20px;
+    height: 10px;
+    margin-right: 3px;
+}

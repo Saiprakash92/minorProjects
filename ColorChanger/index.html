@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+     hk
+</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <h1 id="myId">change color clicking start button</h1>
+   <button id="start">start</button>
+   <button id="stop">stop</button>
+ 
+      
+</body>
+<script >
+ const  randomColor= ()=>{
+    let hex="0123456ABCDEF"
+    let color="#"
+    for(let i=0;i<6;i++){
+      let rand=Math.floor(Math.random()*7)
+      color+=rand
+    }
+  return color
+  }
+  const body=document.querySelector('body')
+  const changeColor=function(){
+     body.style.backgroundColor=`${randomColor()}`
+ }
+ let interval 
+ document.getElementById('start').addEventListener('click', function () {
+   if(!interval){ 
+    interval = setInterval(changeColor, 1000);
+   }
+});
+
+document.getElementById('stop').addEventListener('click', function () {
+  clearInterval(interval);
+  interval=null
+    
+});
+
+ </script>
+</html>
+
